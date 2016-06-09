@@ -1,1 +1,1 @@
-include ':app', ':recorderdemo', ':baseadapterdemo'
+include ':app', ':recorderdemo', ':baseadapterdemo', ':asynctaskdemo'
