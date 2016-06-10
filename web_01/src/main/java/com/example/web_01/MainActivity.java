@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.DownloadListener;
 import android.webkit.WebChromeClient;
+import android.webkit.WebResourceError;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
@@ -19,6 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView titleView;
 
+    private TextView mTextView_Error;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         back = (Button) findViewById(R.id.back);
         refresh = (Button) findViewById(R.id.refresh);
         titleView = (TextView) findViewById(R.id.title);
+
+        mTextView_Error = (TextView) findViewById(R.id.textView_error);
 
         webView.setWebChromeClient(new WebChromeClient() {
             @Override
@@ -49,6 +55,21 @@ public class MainActivity extends AppCompatActivity {
 
                 return super.shouldOverrideUrlLoading(view, url);
             }
+
+//            @Override
+//            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+//                super.onReceivedError(view, errorCode, description, failingUrl);
+//            }
+
+
+            @Override
+            public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
+                super.onReceivedError(view, request, error);
+//                view.loadUrl("file:///android_asset/error.html");
+                mTextView_Error.setText("404 error");
+                webView.setVisibility(View.GONE);
+            }
+
         });
 
         webView.setDownloadListener(new MyDownload());

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.myruler.CM
+        android:layout_width="10mm"
+        android:layout_height="10mm"
+        android:text="0cm"
+        android:textSize="10pt"
+        android:background="#00ff00"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffffff"/>
+
+    <com.example.myruler.CM
+        android:layout_width="10mm"
+        android:layout_height="10mm"
+        android:text="1cm"
+        android:textSize="10pt"
+        android:background="#00bb00"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffffff"/>
+
+    <com.example.myruler.CM
+        android:layout_width="10mm"
+        android:layout_height="10mm"
+        android:text="2cm"
+        android:textSize="10pt"
+        android:background="#448800"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffffff"/>
+
+    <com.example.myruler.CM
+        android:layout_width="10mm"
+        android:layout_height="10mm"
+        android:text="3cm"
+        android:textSize="10pt"
+        android:background="#88bb00"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffffff"/>
+
+    <com.example.myruler.CM
+        android:layout_width="10mm"
+        android:layout_height="10mm"
+        android:text="4cm"
+        android:textSize="10pt"
+        android:background="#bbbb00"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffffff"/>
+
+    <com.example.myruler.CM
+        android:layout_width="10mm"
+        android:layout_height="10mm"
+        android:text="5cm"
+        android:textSize="10pt"
+        android:background="#bbff00"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffffff"/>
+
+    <com.example.myruler.CM
+        android:layout_width="10mm"
+        android:layout_height="10mm"
+        android:text="6cm"
+        android:textSize="10pt"
+        android:background="#00bbff"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffffff"/>
+
+    <com.example.myruler.CM
+        android:layout_width="10mm"
+        android:layout_height="10mm"
+        android:text="7cm"
+        android:textSize="10pt"
+        android:background="#0088bb"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffffff"/>
+
+    <com.example.myruler.CM
+        android:layout_width="10mm"
+        android:layout_height="10mm"
+        android:text="8cm"
+        android:textSize="10pt"
+        android:background="#004488"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffffff"/>
+
+    <com.example.myruler.CM
+        android:layout_width="10mm"
+        android:layout_height="10mm"
+        android:text="9cm"
+        android:textSize="10pt"
+        android:background="#ffbb00"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffffff"/>
+
+    <com.example.myruler.CM
+        android:layout_width="10mm"
+        android:layout_height="10mm"
+        android:text="10cm"
+        android:textSize="10pt"
+        android:background="#ff8800"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffffff"/>
+
+    <com.example.myruler.CM
+        android:layout_width="10mm"
+        android:layout_height="10mm"
+        android:text="11cm"
+        android:textSize="10pt"
+        android:background="#ff4400"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffffff"/>
+
+    <com.example.myruler.CM
+        android:layout_width="10mm"
+        android:layout_height="10mm"
+        android:text="12cm"
+        android:textSize="10pt"
+        android:background="#ff0000"
+        android:layout_gravity="center_vertical"
+        android:textColor="#ffffffff"/>
+
+</LinearLayout>

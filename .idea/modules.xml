@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/asynctaskdemo/asynctaskdemo.iml" filepath="$PROJECT_DIR$/asynctaskdemo/asynctaskdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/baseadapterdemo/baseadapterdemo.iml" filepath="$PROJECT_DIR$/baseadapterdemo/baseadapterdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myruler/myruler.iml" filepath="$PROJECT_DIR$/myruler/myruler.iml" />
       <module fileurl="file://$PROJECT_DIR$/newsdemo/newsdemo.iml" filepath="$PROJECT_DIR$/newsdemo/newsdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/recorderdemo/recorderdemo.iml" filepath="$PROJECT_DIR$/recorderdemo/recorderdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/web_01/web_01.iml" filepath="$PROJECT_DIR$/web_01/web_01.iml" />
