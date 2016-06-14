@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/activitydemo" />
+            <option value="$PROJECT_DIR$/activitytaskdemo" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/asynctaskdemo" />
             <option value="$PROJECT_DIR$/baseadapterdemo" />
