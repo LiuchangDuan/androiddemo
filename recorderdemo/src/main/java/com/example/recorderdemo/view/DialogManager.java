@@ -90,9 +90,9 @@ public class DialogManager {
      */
     public void updateVoiceLevel(int level) {
         if (mDialog != null && mDialog.isShowing()) {
-            mIcon.setVisibility(View.VISIBLE);
-            mVoice.setVisibility(View.VISIBLE);
-            mLabel.setVisibility(View.VISIBLE);
+//            mIcon.setVisibility(View.VISIBLE);
+//            mVoice.setVisibility(View.VISIBLE);
+//            mLabel.setVisibility(View.VISIBLE);
 
             //通过方法名找到资源
             int resId = mContext.getResources().getIdentifier("v" + level,

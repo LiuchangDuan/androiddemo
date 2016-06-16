@@ -19,8 +19,12 @@ public class AudioManager {
 
     private boolean isPrepared;
 
-    private AudioManager() {
+    private AudioManager(String dir) {
+        mDir = dir;
+    }
 
+    public String getCurrentFilePath() {
+        return mCurrentFilePath;
     }
 
     /**
@@ -36,11 +40,11 @@ public class AudioManager {
         mListener = listener;
     }
 
-    public static AudioManager getInstance() {
+    public static AudioManager getInstance(String dir) {
         if (mInstance == null) {
             synchronized (AudioManager.class) {
                 if (mInstance == null) {
-                    mInstance = new AudioManager();
+                    mInstance = new AudioManager(dir);
                 }
             }
         }
@@ -117,7 +121,7 @@ public class AudioManager {
 
     public void release() {
         mMediaRdcorder.stop();
-        mMediaRdcorder.release();
+//        mMediaRdcorder.release();
     }
 
     public void cancel() {

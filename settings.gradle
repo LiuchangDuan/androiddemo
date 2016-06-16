@@ -1,1 +1,1 @@
-include ':app', ':recorderdemo', ':baseadapterdemo', ':asynctaskdemo', ':newsdemo', ':web_01', ':myruler', ':activitydemo', ':activitytaskdemo'
+include ':app', ':recorderdemo', ':baseadapterdemo', ':asynctaskdemo', ':newsdemo', ':web_01', ':myruler', ':activitydemo', ':activitytaskdemo', ':imageloaderdemo'
