@@ -121,6 +121,34 @@ public class ArcMenu extends ViewGroup implements View.OnClickListener {
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
         if (changed) {
             layoutCButton();
+
+            // count是包含主菜单的
+            int count = getChildCount();
+
+            for (int i = 0; i < count - 1; i++) {
+                View child = getChildAt(i + 1);
+
+//                child.setVisibility(View.GONE);
+
+                int cl = (int) (mRadius * Math.sin(Math.PI / 2 / (count - 2) * i));
+                int ct = (int) (mRadius * Math.cos(Math.PI / 2 / (count - 2) * i));
+
+                int cWidth = child.getMeasuredWidth();
+                int cHeight = child.getMeasuredHeight();
+
+                // 如果菜单位置在底部 左下，右下
+                if (mPosition == Position.LEFT_BOTTOM || mPosition == Position.RIGHT_BOTTOM) {
+                    ct = getMeasuredHeight() - cHeight - ct;
+                }
+
+                // 右上，右下
+                if (mPosition == Position.RIGHT_TOP || mPosition == Position.RIGHT_BOTTOM) {
+                    cl = getMeasuredWidth() - cWidth - cl;
+                }
+
+                child.layout(cl, ct, cl + cWidth, ct + cHeight);
+            }
+
         }
     }
 
