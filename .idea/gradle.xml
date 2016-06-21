@@ -16,11 +16,16 @@
             <option value="$PROJECT_DIR$/arcmenu" />
             <option value="$PROJECT_DIR$/asynctaskdemo" />
             <option value="$PROJECT_DIR$/baseadapterdemo" />
+            <option value="$PROJECT_DIR$/externalstorage" />
+            <option value="$PROJECT_DIR$/filebrower" />
             <option value="$PROJECT_DIR$/handlerdemo01" />
             <option value="$PROJECT_DIR$/imageloaderdemo" />
+            <option value="$PROJECT_DIR$/internalstorage" />
             <option value="$PROJECT_DIR$/myruler" />
             <option value="$PROJECT_DIR$/newsdemo" />
+            <option value="$PROJECT_DIR$/readcontact" />
             <option value="$PROJECT_DIR$/recorderdemo" />
+            <option value="$PROJECT_DIR$/sharedpreferencesdemo" />
             <option value="$PROJECT_DIR$/web_01" />
           </set>
         </option>
