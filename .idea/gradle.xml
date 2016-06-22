@@ -21,11 +21,13 @@
             <option value="$PROJECT_DIR$/handlerdemo01" />
             <option value="$PROJECT_DIR$/imageloaderdemo" />
             <option value="$PROJECT_DIR$/internalstorage" />
+            <option value="$PROJECT_DIR$/mymenu" />
             <option value="$PROJECT_DIR$/myruler" />
             <option value="$PROJECT_DIR$/newsdemo" />
             <option value="$PROJECT_DIR$/readcontact" />
             <option value="$PROJECT_DIR$/recorderdemo" />
             <option value="$PROJECT_DIR$/sharedpreferencesdemo" />
+            <option value="$PROJECT_DIR$/usingsqlite" />
             <option value="$PROJECT_DIR$/web_01" />
           </set>
         </option>

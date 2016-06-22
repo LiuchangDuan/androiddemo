@@ -14,11 +14,13 @@
       <module fileurl="file://$PROJECT_DIR$/handlerdemo01/handlerdemo01.iml" filepath="$PROJECT_DIR$/handlerdemo01/handlerdemo01.iml" />
       <module fileurl="file://$PROJECT_DIR$/imageloaderdemo/imageloaderdemo.iml" filepath="$PROJECT_DIR$/imageloaderdemo/imageloaderdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/internalstorage/internalstorage.iml" filepath="$PROJECT_DIR$/internalstorage/internalstorage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mymenu/mymenu.iml" filepath="$PROJECT_DIR$/mymenu/mymenu.iml" />
       <module fileurl="file://$PROJECT_DIR$/myruler/myruler.iml" filepath="$PROJECT_DIR$/myruler/myruler.iml" />
       <module fileurl="file://$PROJECT_DIR$/newsdemo/newsdemo.iml" filepath="$PROJECT_DIR$/newsdemo/newsdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/readcontact/readcontact.iml" filepath="$PROJECT_DIR$/readcontact/readcontact.iml" />
       <module fileurl="file://$PROJECT_DIR$/recorderdemo/recorderdemo.iml" filepath="$PROJECT_DIR$/recorderdemo/recorderdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/sharedpreferencesdemo/sharedpreferencesdemo.iml" filepath="$PROJECT_DIR$/sharedpreferencesdemo/sharedpreferencesdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usingsqlite/usingsqlite.iml" filepath="$PROJECT_DIR$/usingsqlite/usingsqlite.iml" />
       <module fileurl="file://$PROJECT_DIR$/web_01/web_01.iml" filepath="$PROJECT_DIR$/web_01/web_01.iml" />
     </modules>
   </component>
