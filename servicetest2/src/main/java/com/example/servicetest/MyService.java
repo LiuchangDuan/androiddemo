@@ -6,8 +6,8 @@ import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Binder;
 import android.os.IBinder;
+import android.os.RemoteException;
 import android.util.Log;
 
 /**
@@ -20,12 +20,19 @@ public class MyService extends Service {
 
     public static final String TAG = "MyService";
 
-    private MyBinder mBinder = new MyBinder();
+//    private MyBinder mBinder = new MyBinder();
 
     @Override
     public void onCreate() {
         Log.d("MyService", "MyService thread id is " + Thread.currentThread().getId());
         super.onCreate();
+        Log.d(TAG, "onCreate() executed");
+        Log.d("TAG", "process is " + android.os.Process.myPid());
+//        try {
+//            Thread.sleep(60000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         Intent notificationIntent = new Intent(this, MainActivity.class);
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
@@ -49,7 +56,6 @@ public class MyService extends Service {
 //        Intent notificationIntent = new Intent(this, MainActivity.class);
 //        PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, notificationIntent, 0);
 //        notification.setLates
-        Log.d(TAG, "onCreate() executed");
     }
 
     @Override
@@ -69,10 +75,25 @@ public class MyService extends Service {
         return mBinder;
     }
 
-    class MyBinder extends Binder {
-        public void startDownload() {
-            Log.d(TAG, "startDownload() executed");
+//    class MyBinder extends Binder {
+//        public void startDownload() {
+//            Log.d(TAG, "startDownload() executed");
+//        }
+//    }
+
+    IMyAidlService.Stub mBinder = new IMyAidlService.Stub() {
+        @Override
+        public int plus(int a, int b) throws RemoteException {
+            return a + b;
         }
-    }
+
+        @Override
+        public String toUpperCase(String str) throws RemoteException {
+            if (str != null) {
+                return str.toUpperCase();
+            }
+            return null;
+        }
+    };
 
 }

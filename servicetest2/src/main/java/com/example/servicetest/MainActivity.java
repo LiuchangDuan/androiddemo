@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
+import android.os.RemoteException;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -17,13 +18,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button bindButton;
     private Button unbindButton;
 
-    private MyService.MyBinder myBinder;
+//    private MyService.MyBinder myBinder;
+
+    private IMyAidlService myAidlService;
 
     private ServiceConnection connection = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
-            myBinder = (MyService.MyBinder) service;
-            myBinder.startDownload();
+            // 将传入的IBinder对象传换成MyAIDLService对象
+            myAidlService = IMyAidlService.Stub.asInterface(service);
+            try {
+                int result = myAidlService.plus(3, 5);
+                String upperStr = myAidlService.toUpperCase("hello world");
+                Log.d("TAG", "result is " + result);
+                Log.d("TAG", "upperStr is " + upperStr);
+            } catch (RemoteException e) {
+                e.printStackTrace();
+            }
+//            myBinder = (MyService.MyBinder) service;
+//            myBinder.startDownload();
         }
 
         @Override
@@ -33,7 +46,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d("MyService", "MainActivity thread id is " + Thread.currentThread().getId());
+//        Log.d("MyService", "MainActivity thread id is " + Thread.currentThread().getId());
+        Log.d("TAG", "process id is " + android.os.Process.myPid());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         startButton = (Button) findViewById(R.id.start_service);
